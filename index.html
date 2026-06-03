@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Nurse Station</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="header-left">
+                <h1><i class="fa-solid fa-heart-pulse"></i> Nurse Station Monitor</h1>
+                <p class="datetime" id="datetime"></p>
+            </div>
+            <div class="header-right">
+                <div class="stat-badge normal"><span id="count-normal">0</span> Normal</div>
+                <div class="stat-badge warning"><span id="count-warning">0</span> Perhatian</div>
+                <div class="stat-badge critical"><span id="count-critical">0</span> Kritis</div>
+            </div>
+        </header>
+
+        <main class="patient-grid" id="patient-grid">
+            <!-- Patient Cards will be injected here via JS -->
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
